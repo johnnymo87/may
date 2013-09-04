@@ -14,7 +14,13 @@ May::Application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
+      resources :users, :songs
+
   # Example resource route with options:
+
+      resources :articles do
+        resources :comments
+      end
   #   resources :products do
   #     member do
   #       get 'short'
@@ -48,7 +54,7 @@ May::Application.routes.draw do
   #   resources :photos, concerns: :toggleable
 
   # Example resource route within a namespace:
-  #   namespace :admin do
+    # namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
