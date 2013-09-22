@@ -37,8 +37,7 @@ group :development, :test do
   gem 'ZenTest'
 end
 group :test do
-  gem 'cucumber-rails', :require => false
-  gem 'cucumber-rails-training-wheels'
+  gem "cucumber-rails", "~> 1.4.0", :require => false
   gem 'simplecov'
   gem 'factory_girl_rails'
 end

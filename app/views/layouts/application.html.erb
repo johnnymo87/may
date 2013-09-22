@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>May</title>
+  <%= yield :head %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <!--   <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+  <!-- Google Analytics Tracking Code -->
+
+
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+  <header> 
+    <h1> Brian May Music </h1> 
+    <nav>
+      <ul>
+        <li> <%= link_to "Home", '/' %> </li>
+        <li> <%= link_to "Music", songs_path  %> </li>
+        <li> <%= link_to "Articles", articles_path  %> </li>
+        <li> <%= link_to "Bio", 'welcome/bio' %> </li>
+    </nav>
+
+  </header>
+
 <%= yield %>
 
 </body>
+
+<footer>
+  <p> Site developed by Abby Jones.  </p>
+  <p> Design by @breadforsure  </p>
+  <p> 2013 </p>
+</footer>
+
 </html>

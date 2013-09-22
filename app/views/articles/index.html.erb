@@ -1,0 +1,12 @@
+<% content_for :head do %> 
+  <meta title="Articles Index">
+  <meta name="description" content="  ">
+<% end %>
+
+
+
+<h1> Wise Words and Random Ramblings </h1>
+
+<% @articles.each do  |article| -%>
+  <p>  <%= article.title %>  </p>
+<% end -%>
