@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/bmabey/database_cleaner.git
+  revision: df55cf7b746e792dba1d11eea0d6e31e3abc7e8c
+  specs:
+    database_cleaner (1.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,7 +64,6 @@ GEM
       cucumber (>= 1.2.0)
       nokogiri (>= 1.5.0)
       rails (>= 3.0.0)
-    database_cleaner (0.8.0)
     debugger (1.6.1)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
@@ -182,7 +187,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   cucumber-rails (~> 1.4.0)
-  database_cleaner
+  database_cleaner!
   debugger
   factory_girl_rails
   jbuilder (~> 1.2)

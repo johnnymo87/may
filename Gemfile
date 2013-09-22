@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 1.2'
 group :development, :test do
   gem 'sqlite3'
   gem  'debugger'
-  gem 'database_cleaner'
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
   gem 'capybara'
   gem 'launchy'
   gem 'rspec-rails'
