@@ -77,4 +77,7 @@ May::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  #Tell Paperclip where to look for ImageMagick -- MAY NEED TO BE ADJUSTED
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end

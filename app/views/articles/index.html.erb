@@ -8,5 +8,5 @@
 <h1> Wise Words and Random Ramblings </h1>
 
 <% @articles.each do  |article| -%>
-  <p>  <%= article.title %>  </p>
+  <p> <%= link_to article.title, article_path(article.id) -%>  </p>
 <% end -%>
