@@ -13,8 +13,6 @@ Then(/^I should see a list of blog posts$/) do
 end
 
 
-Given an article named "First Article" with user_id "1" and body:
-      """
-      This is the first article.  Edit or change...
-
-      """
+Given(/^an article by "(.*?)" titled "(.*?)" with body:$/) do |user_id, title, text|
+  Article.create!({user_id: user_id, title: title, body: text})
+end
