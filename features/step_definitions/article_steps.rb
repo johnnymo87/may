@@ -11,3 +11,10 @@ Then(/^I should see a list of blog posts$/) do
   page.should have_content("First Article") 
   page.should have_content("Second Article")  
 end
+
+
+Given an article named "First Article" with user_id "1" and body:
+      """
+      This is the first article.  Edit or change...
+
+      """

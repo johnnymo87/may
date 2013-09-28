@@ -3,6 +3,13 @@ Feature: Blog page
   Should be able to read his blog posts
   To increase their engagement with his ministry
 
+Background:
+  Given an article named "First Article" with user_id "1" and body:
+      """
+      This is the first article.  Edit or change...
+
+      """
+
 Scenario:  Viewing articles home page
   Given I am on the "Articles" page
   Then I should see a list of blog posts
