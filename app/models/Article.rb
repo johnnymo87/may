@@ -1,8 +1,9 @@
 class Article < ActiveRecord::Base
   belongs_to :User
   has_many :Comments
-  attr_accessible :photo
-  has_attached_file :photo, :styles => { :medium => "300x300>", :thumb => "100x100>" },
+  #TODO - make photo accessible
+  # attr_accessible :photo
+  has_attached_file :photo, :styles => { :medium => "300x300>", :thumb => "100x100>" }
 # From Paperclip install warning.  Necessary???
 #   Paperclip 3.0 introduces a non-backward compatible change in your attachment
 # path. This will help to prevent attachment name clashes when you have

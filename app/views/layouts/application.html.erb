@@ -21,12 +21,13 @@
 
   <header> 
     <h1> Brian May Music </h1> 
+    <p> <%= link_to "Sign In", login_path %> </p>
     <nav>
       <ul>
         <li> <%= link_to "Home", '/' %> </li>
         <li> <%= link_to "Music", songs_path  %> </li>
         <li> <%= link_to "Articles", articles_path  %> </li>
-        <li> <%= link_to "Bio", 'welcome/bio' %> </li>
+        <li> <%= link_to "Bio", bio_path %> </li>
     </nav>
 
   </header>
@@ -36,9 +37,7 @@
 </body>
 
 <footer>
-  <p> Site developed by Abby Jones.  </p>
-  <p> Design by @breadforsure  </p>
-  <p> 2013 </p>
+  <p> Insert Footer Content Here </p>
 </footer>
 
 </html>
