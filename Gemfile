@@ -30,6 +30,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Use Devise gem for User authentication
+gem 'devise'
+
 group :development, :test do
   gem 'sqlite3'
   gem  'debugger'
