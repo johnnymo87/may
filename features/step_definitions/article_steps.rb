@@ -4,7 +4,7 @@ Then /I should be on the "Articles" page/ do
 end
 
 Given /I am on the "Articles" page/ do
-  visit("/articles")
+  visit(articles_path)
 end
 
 Then(/^I should see a list of blog posts$/) do

@@ -31,7 +31,7 @@ class ArticlesController < ApplicationController
 
   def index
     # debugger
-    @articles = Article.order("created_at")
+    @articles = Article.all
   end
 
   def show

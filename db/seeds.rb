@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 ###REMOVE THIS USER BEFORE DEPLOYMENT
-User.create(login: "admin", password: "password", name: "admin", profile_id: '1')
+User.create!(login: "admin", password: "password", name: "admin", email: 'abc@mmail.com', profile_id: '1')
 
 Article.create(user_id: User.first.id, title: "First Article", body: "Insert text here...", keywords: "first")
 Article.create(user_id: User.first.id, title: "Second Article", body: "Insert text here...", keywords: "second")
