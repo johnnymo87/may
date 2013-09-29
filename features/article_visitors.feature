@@ -5,9 +5,16 @@ Feature: Blog page
 
 
   Background:
-    Given an article by "tester" titled "test" with body:
+    Given an article by "tester" titled "First Article" with body:
       """
-      Hello world!
+      Insert text for first article here...
+
+      """
+    And an article by "tester" titled "Second Article" with body:
+      """
+
+      Insert text for second article here...
+
       """
 
   Scenario:  Viewing articles home page

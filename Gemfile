@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 1.2'
 # Use Devise gem for User authentication
 gem 'devise'
 
+# Use Twitter Bootstrap for layout and styling
+gem 'bootstrap-sass'
+
 group :development, :test do
   gem 'sqlite3'
   gem  'debugger'
