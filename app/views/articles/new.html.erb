@@ -2,3 +2,9 @@
   <meta title="New Article">
   <meta name="description" content="Write a new blog article ">
 <% end %>
+
+<%= simple_form_for @article do |f| %>
+  <%= f.input :title, label: 'Enter title here' %>
+  <%= f.input :body, label: 'Article body here...' %>
+  <%= f.button :submit %>
+<% end %>

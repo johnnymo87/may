@@ -35,6 +35,8 @@ gem 'devise'
 
 # Use Twitter Bootstrap for layout and styling
 gem 'bootstrap-sass'
+# Use Simple Form for creating forms easily
+gem 'simple_form'
 
 group :development, :test do
   gem 'sqlite3'

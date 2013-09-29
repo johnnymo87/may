@@ -2,7 +2,8 @@ class ArticlesController < ApplicationController
 
 
   def new
-    #Default - render "new" template
+    @article = Article.new
+    # debugger
   end
 
   def create
