@@ -14,4 +14,12 @@ class Article < ActiveRecord::Base
 #     has_attached_file :avatar,
 #       :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
 #       :url => "/system/:attachment/:id/:style/:filename"
+
+
+   def preview
+    words = self.body.split(' ')
+    preview = words[0, 24].join(' ') + "..."
+    return preview
+  end
+
 end

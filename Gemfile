@@ -50,7 +50,7 @@ end
 group :test do
   gem "cucumber-rails", "~> 1.4.0", :require => false
   gem 'simplecov'
-  gem 'factory_girl_rails'
+  gem  "factory_girl_rails", "~> 4.0"
 end
 
 group :production do
