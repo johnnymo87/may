@@ -27,4 +27,10 @@ Feature: Blog page
     And each blog post should have a picture
     And I should see the first few lines of each post
 
+  Scenario:  Viewing an individual article
+    Given I am on the "Articles" page
+    And I click on an article title
+    Then I should be on the article page
+    And I should see the full text of the article
+    And I should see the article photo
 

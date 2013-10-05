@@ -40,6 +40,4 @@ class ArticlesController < ApplicationController
     @article = Article.find(id)
   end
 
-
-
 end

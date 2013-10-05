@@ -26,6 +26,13 @@ May::Application.routes.draw do
       resources :articles do
         resources :comments
       end
+
+      # resources :articles do
+      #   member do
+      #     get "photo"
+      #   end
+      # end
+
   #   resources :products do
   #     member do
   #       get 'short'
