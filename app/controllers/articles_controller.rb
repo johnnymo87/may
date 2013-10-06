@@ -2,7 +2,8 @@ class ArticlesController < ApplicationController
 
 
   def new
-    #Default - render "new" template
+    @article = Article.new
+    # debugger
   end
 
   def create
@@ -38,7 +39,5 @@ class ArticlesController < ApplicationController
     id = params[:id]
     @article = Article.find(id)
   end
-
-
 
 end

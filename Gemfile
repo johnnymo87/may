@@ -33,6 +33,11 @@ gem 'jbuilder', '~> 1.2'
 # Use Devise gem for User authentication
 gem 'devise'
 
+# Use Twitter Bootstrap for layout and styling
+gem 'bootstrap-sass'
+# Use Simple Form for creating forms easily
+gem 'simple_form'
+
 group :development, :test do
   gem 'sqlite3'
   gem  'debugger'
@@ -45,7 +50,7 @@ end
 group :test do
   gem "cucumber-rails", "~> 1.4.0", :require => false
   gem 'simplecov'
-  gem 'factory_girl_rails'
+  gem  "factory_girl_rails", "~> 4.0"
 end
 
 group :production do
