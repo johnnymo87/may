@@ -11,20 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131005185148) do
+ActiveRecord::Schema.define(version: 20131006170925) do
 
   create_table "articles", force: true do |t|
+    t.string   "title"
     t.integer  "user_id"
-    t.string   "title",              default: "Title"
-    t.text     "body",               default: ""
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.text     "body"
     t.string   "keywords"
-    t.boolean  "allow_comments",     default: true
+    t.boolean  "allow_comments"
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "comments", force: true do |t|

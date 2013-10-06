@@ -8,14 +8,14 @@ class InitialSchema < ActiveRecord::Migration
       t.column :type, :string, default: "Visitor"
     end
 
-    create_table :articles do |t|
-      t.integer :user_id
-      t.column :title, :string, default: "Title"
-      t.column :body, :text, default: ""
-      t.timestamps
-      t.column :keywords, :string, default: nil
-      t.column :allow_comments, :boolean, default: true
-    end
+    #create_table :articles do |t|
+    #  t.integer :user_id
+    #  t.column :title, :string, default: "Title"
+    #  t.column :body, :text, default: ""
+    #  t.timestamps
+    #  t.column :keywords, :string, default: nil
+    #  t.column :allow_comments, :boolean, default: true
+    #end
 
     create_table :comments do |t|
       t.integer :user_id

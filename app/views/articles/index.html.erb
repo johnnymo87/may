@@ -1,20 +1,37 @@
-<% content_for :head do %> 
-  <meta title="Articles Index">
-  <meta name="description" content="  ">
-<% end %>
+<h1>Listing articles</h1>
 
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>User</th>
+      <th>Body</th>
+      <th>Keywords</th>
+      <th>Allow comments</th>
+      <th>Photo</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.user_id %></td>
+        <td><%= article.body %></td>
+        <td><%= article.keywords %></td>
+        <td><%= article.allow_comments %></td>
+        <td><%= article.photo %></td>
+        <td><%= link_to 'Show', article %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
-<h1> Articles </h1>
+<br>
 
-<%= link_to "New", new_article_path %>
-
-<div class="article_list">
-  <% @articles.each do  |article| -%>
-    <div class="each_article">
-      <%= image_tag article.photo.url(:original) -%> 
-      <p> <%= link_to article.title, article_path(article.id) -%>  </p>
-      <p> <%= article.preview -%> </p>
-    </div>
-  <% end -%>
-</div>
+<%= link_to 'New Article', new_article_path %>
