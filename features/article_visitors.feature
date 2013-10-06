@@ -4,9 +4,13 @@ Feature: Blog page
   To increase their engagement with his ministry
 
   Background:
-    Given an article by "tester" titled "test" with body:
+    Given an article by "tester" titled "First Article" with body:
       """
       Hello world!
+      """
+    Given an article by "tester" titled "Second Article" with body:
+      """
+      Hello again!
       """
 
   Scenario:  Viewing articles home page
