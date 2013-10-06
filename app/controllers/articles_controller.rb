@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.create!(params[:article])
+    @article = Article.create!(params.require(:article).permit!)
     flash[:notice] = "#{@article.title} was successfully created."
     redirect_to articles_path
   end
