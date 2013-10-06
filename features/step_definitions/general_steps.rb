@@ -12,5 +12,5 @@ When(/^I fill in "(.*?)" with "(.*?)"$/) do |field, value|
 end
 
 And /I attach a photo with path "(.*)"/ do |path|
-  page.attach_file('#article_photo', path)
+  page.attach_file('article_photo', File.join(Rails.root, path))
 end
