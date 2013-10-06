@@ -10,8 +10,15 @@ Given(/^an article by "(.*?)" titled "(.*?)" with body:$/) do |user_id, title, t
 end
 
 Given(/^I am logged in as a site owner or writer$/) do
-  User.create!({login: 'admin', name: "My Name", email: "admin@site.com", profile_id: '1', password: ''})
-  #  TODO - sign in user
+  name = "My Name"
+  email = 'testing@man.net'
+  password = 'secretpass'
+  User.new(name: name, email: email, password: password, password_confirmation: password).save!
+
+  visit '/users/sign_in'
+  fill_in "user_email", :with => email
+  fill_in "user_password", :with => password
+  click_button "Sign in"
 end
 
 
